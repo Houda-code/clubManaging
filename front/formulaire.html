@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title Page-->
+    <title>Inscription</title>
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!--CSS-->
+    <link href="formulaire.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper p-t-100 p-b-100 ">
+        <div class="wrapper wrapper--w960" style="width: 500;" >
+            <div class="card card-2">
+                <div class="card-heading" style="vertical-align:middle">
+                    <h3 style="text-align: center;">Contact</h3>
+                    <p style="padding: 20px;"><img src="1295181.png" class="imageflottante" alt="Image flottante" height="30" width="30" /> adresse : manar1,Tunis,Tunisie</p>
+                    <p style="padding: 20px;"><img src="tel.png" class="imageflottante" alt="Image flottante" height="30" width="30" /> phone : +216 00 000 000 </p>
+                    <p style="padding: 20px;"><img src="msg.png" class="imageflottante" alt="Image flottante" height="30" width="30" /> email : ihm.ihm@gmail.com</p>                 
+                    <p style="padding: 20px; text-align: center;"><img src="fb.png" class="imageflottante" alt="Image flottante" height="30" width="30" />        <img src="insta.png" class="imageflottante" alt="Image flottante" height="30" width="30" /></p>                 
+                
+                </div>
+                <div class="card-body">
+                    <h2 class="title">Inscription</h2>                    
+                    <form method="POST" action="http://localhost:7000/auth/register">
+                        
+                        <!-- nom et prenom-->
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Nom" name="nom">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Prénom" name="prenom">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- date de naissance et adresse-->
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-2 js-datepicker" type="date" placeholder="date de naissance" name="birthday">
+                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="ville,cité,zipcode" name="addresse">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--numéro de teléphone-->
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="tel" placeholder="téléphone" name="telephone">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row row-space">                          
+                            <div class="col-2" style="flex-direction: column;">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="sportprincipal">
+                                            <option disabled="disabled" selected="selected">Sport Principal</option>
+                                            <option value="Rugby">Rugby</option>
+                                            <option value="Foot">Foot</option>
+                                            <option value="Tennis">Tennis</option>
+                                            <option value="Hand">Hand</option>
+                                            <option value="Golf">Golf</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>Sports souhaités</h5><br/>
+                            <div class="form-check" >
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="sports[]" value="Natation" id="flexCheckDefault" >
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                  Natation
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="sports[]" value="Tennis" id="flexCheckChecked" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                  Tennis
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="sports[]" value="Hand" id="flexCheckChecked" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                  Hand
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" name="sports[]" value="Rugby" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                  Rugby
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="sports[]" value="Foot" id="flexCheckChecked" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                  Foot
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="sports[]" value="Golf" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                  Golf
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="sports[]" value="Dance" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                  Dance
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="sports[]" value="Escrime" id="flexCheckChecked" >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                  Escrime
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="sports[]" value="Tir" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                  Tir
+                                    </label>
+                                </div>
+                            </div>    
+                        </div>  
+                        <!--message-->
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="message" name="message">
+                                </div>
+                            </div>
+                        </div>
+                        <!--bouton-->
+                        <div class="p-t-5">
+                            <button class="btn btn--radius btn--green" type="submit">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+   <!-- <script src="js/global.js"></script>-->
+</body>
+
+</html>

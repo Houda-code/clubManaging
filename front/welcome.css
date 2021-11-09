@@ -1,0 +1,17 @@
+body{
+    /*background-image :url("musculation.jpeg");*/
+}
+p{
+    color: white;
+}
+
+.texte_centrer {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: white;
+    width: 400px;
+}
+#p3{
+    color: black;
+}
